@@ -13,7 +13,9 @@ export const useDialogBox = () => useContext(DialogBoxContext);
 function App() {
   const [open, setOpen] = useState(false);
   const [editNote, setEditNote] = useState(null);
+  const [search, setSearch] = useState("")
 
+  console.log(search)
   const openCreate = (note) => {
     setEditNote(note || null);
     setOpen(true);
@@ -24,7 +26,7 @@ function App() {
   };
 
   return (
-    <DialogBoxContext.Provider value={{ open, openCreate, closeCreate, editNote }}>
+    <DialogBoxContext.Provider value={{ open, openCreate, closeCreate, editNote,search, setSearch }}>
       {/* <BrowserRouter> */}
         <div className="min-h-screen flex flex-col"> {/* Flex container */}
           <Nav /> {/* Passes openCreate via context */}
