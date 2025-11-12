@@ -21,7 +21,7 @@ const Nav = () => {
        type="text"
        onChange={(e) => setSearch(e.target.value)}
        placeholder="Search notes..."
-       className="w-full max-w-sm px-4 py-2 rounded-2xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-500"
+       className="w-full max-w-sm px-4 py-2 rounded-2xl border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:outline-none placeholder-gray-500 text-cyan-50"
         />
 
 
