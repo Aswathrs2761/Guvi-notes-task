@@ -1,16 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useDialogBox } from "../App";
 
 const Nav = () => {
   const { openCreate } = useDialogBox();
   return (
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
-      <div className="max-w-screen-xl mx-auto p-8 flex items-center justify-between">
-        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+      <div className="max-w-7xl mx-auto p-8 flex items-center justify-between">
+        {/* <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse"> */}
           <img src="https://static1.xdaimages.com/wordpress/wp-content/uploads/2024/03/samsung-notes-logo.png" className="h-12" alt="QuickNotes Logo" />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">QuickNotes</span>
-        </Link>
+        {/* </Link> */}
         <div>
           <button
             type="button"
